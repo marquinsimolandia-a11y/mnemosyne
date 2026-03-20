@@ -28,7 +28,7 @@ jobs:
         run: flutter pub get
       
       - name: Build APK
-        run: flutter build apk --release
+        env:`n          GRADLE_OPTS: "-Dorg.gradle.daemon=false -Xmx1536m"`n        run: flutter build apk --release --no-shrink
         env:
           GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.workers.max=2 -Xmx3g"
       
