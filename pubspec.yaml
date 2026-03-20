@@ -39,7 +39,6 @@ dependencies:
 
   # Voice / Audio
   speech_to_text: 7.3.0
-  flutter_sound: 9.30.0
 
   # File handling
   file_picker: 10.3.10
