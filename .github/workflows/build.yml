@@ -29,6 +29,8 @@ jobs:
       
       - name: Build APK
         run: flutter build apk --release
+        env:
+          GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.workers.max=2 -Xmx3g"
       
       - name: Upload APK
         uses: actions/upload-artifact@v4
