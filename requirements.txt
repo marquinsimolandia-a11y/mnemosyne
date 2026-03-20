@@ -1,0 +1,7 @@
+flet>=0.21.2
+sympy
+numpy
+google-generativeai
+requests
+beautifulsoup4
+sqlite3 # built-in, but just noting it here conceptually. Removing from actual requirements though.
